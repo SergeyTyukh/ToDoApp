@@ -138,7 +138,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: 20px;
-    align-items: flex-start;
+    align-items: flex;
     padding: 8px 12px 8px 0px;
     gap: 8px;
     width: 552px;
