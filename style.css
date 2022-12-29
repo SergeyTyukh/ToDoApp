@@ -12,6 +12,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+button {
+    border: none;
+}
+
 .app {
     display: flex;
     flex-direction: column;
@@ -24,7 +28,6 @@ body {
     background: #FFFFFF;
     border-radius: 4px;
     flex: none;
-    order: 0;
     flex-grow: 0;
 }
 
@@ -37,7 +40,6 @@ body {
     line-height: 42px;
     color: #1B1C25;
     flex: none;
-    order: 0;
     flex-grow: 0;
 }
 
@@ -50,7 +52,6 @@ body {
     width: 552px;
     height: 48px;
     flex: none;
-    order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
@@ -64,7 +65,6 @@ body {
     border: 1px solid #1B1C25;
     border-radius: 4px;
     flex: none;
-    order: 0;
     flex-grow: 1;
 }
 
@@ -80,7 +80,6 @@ body {
     background: #206A5D;
     border-radius: 4px;
     flex: none;
-    order: 1;
     flex-grow: 0;
 }
 
@@ -97,7 +96,6 @@ body {
     text-align: center;
     color: #FFFFFF;
     flex: none;
-    order: 0;
     flex-grow: 0;
 }
 
@@ -113,7 +111,6 @@ body {
     background: #DB6969;
     border-radius: 4px;
     flex: none;
-    order: 2;
     flex-grow: 0;
 }
 
@@ -130,7 +127,6 @@ body {
     text-align: center;
     color: #FFFFFF;
     flex: none;
-    order: 0;
     flex-grow: 0;
 }
 
@@ -144,7 +140,6 @@ body {
     width: 552px;
     height: 40px;
     flex: none;
-    order: 2;
     align-self: stretch;
     flex-grow: 0;
 }
@@ -155,7 +150,6 @@ body {
     background: #EBECF1;
     border-radius: 4px;
     flex: none;
-    order: 0;
 }
 
 .text {
@@ -169,7 +163,6 @@ body {
     align-items: center;
     color: #000000;
     flex: none;
-    order: 1;
     flex-grow: 1;
 }
 
@@ -179,7 +172,6 @@ body {
     background: #DB6969;
     border-radius: 4px;
     flex: none;
-    order: 2;
     flex-grow: 0;
 }
 
@@ -189,6 +181,5 @@ body {
     background: #1F4068;
     border-radius: 4px;
     flex: none;
-    order: 0;
     flex-grow: 0;
 }

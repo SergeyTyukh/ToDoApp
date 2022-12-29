@@ -1,11 +1,11 @@
-const ButtonElement = document.querySelector("#removeBtn");
-const TaskElement = document.querySelector("#taskForm");
+const ButtonElement = document.getElementById("removeBtn");
+const TaskElement = document.getElementById("list");
 
 
 ButtonElement.addEventListener("click", () =>{
-    let RemoveItem = document.removeElement('div')
-    RemoveItem.innerHTML = TaskElement.value;
-    TaskElement.removeChild(RemoveItem)
+    const MyDiv = document.getElementById("list");
+    const removeItem = MyDiv.parentNode;
+    TaskElement.innerHTML = MyDiv.value;
+    removeItem.removeChild(MyDiv)
 })
 
-ButtonElement();

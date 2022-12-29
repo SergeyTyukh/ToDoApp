@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <title>To do Application</title>
   </head>
 
@@ -18,24 +17,26 @@
       <form class="main">
         <input type="text" class="example">
         <button id="addBtn" class="add plus" type="submit"> + </button>
-        <button id="removeBtn" class="remove ex"> x </button>
+        <button id="removeBtn" class="remove ex" type="button"> x </button>
       </form>
-      <div class="taskForm">
-        <button id="checkBtn" class="check"></button>
-        <div class="text">Clean my room</div>
-        <button id="delBtn" class="delete"></button>
-      </div>
-      <div class="taskForm">
-        <button id="checkBtn" class="check"></button>
-        <div class="text">Create a prototype</div>
-        <button id="delBtn" class="delete"></button>
-      </div>
-      <div class="taskForm">
-        <button id="checkBtn" class="complete"></button>
-        <div class="text">Finish my homework</div>
-        <button id="delBtn" class="delete"></button>
+      <div id="list">
+        <div class="taskForm">
+          <button id="checkBtn" class="check"></button>
+          <div class="text">Clean my room</div>
+          <button id="delBtn" class="delete"></button>
+        </div>
+        <div class="taskForm">
+          <button id="checkBtn" class="check"></button>
+          <div class="text">Create a prototype</div>
+          <button id="delBtn" class="delete"></button>
+        </div>
+        <div class="taskForm">
+          <button id="checkBtn" class="complete"></button>
+          <div class="text">Finish my homework</div>
+          <button id="delBtn" class="delete"></button>
+        </div>
       </div>
     </div>
+    <script  src="app.js" async defer></script>
   </body>
-
 </html>
