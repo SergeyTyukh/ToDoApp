@@ -2,7 +2,7 @@ let delform = document.getElementById("removeBtn");
 const ButtonElement = document.getElementById("addBtn");
 const InputElement = document.getElementById("typing");
 const ListElement = document.getElementById("list");
-
+const FormElement = document.getElementById("general");
 
 
 delform.addEventListener("click", () => {
@@ -14,10 +14,22 @@ delform.addEventListener("click", () => {
 
 
 
-ButtonElement.addEventListener('click', () => {
-    let taskForm = document.createElement('div')
-    taskForm.classList.add('taskForm')
-    taskForm.innerHTML = InputElement.value;
-    ListElement.append(taskForm)
-})
+FormElement.addEventListener("submit", (event) => {
+  let taskForm = document.createElement("div");
+  let taskaddBtn = document.createElement("button");
+   taskaddBtn.id = "checkBtn";
+   taskaddBtn.className = "check";
+  let taskPoint = document.createElement("div");
+   taskPoint.className = "text";
+  let taskdelBtn = document.createElement("button");
+   taskdelBtn.id = "delBtn";
+   taskdelBtn.className = "delete";
 
+  taskForm.classList.add("taskForm");
+  taskPoint.innerHTML = InputElement.value;
+  taskForm.appendChild(taskaddBtn);
+  taskForm.appendChild(taskPoint);
+  taskForm.appendChild(taskdelBtn);
+  ListElement.appendChild(taskForm);
+  event.preventDefault();
+});
