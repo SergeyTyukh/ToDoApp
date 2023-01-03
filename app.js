@@ -3,7 +3,7 @@ const ButtonElement = document.getElementById("addBtn");
 const InputElement = document.getElementById("typing");
 const ListElement = document.getElementById("list");
 const FormElement = document.getElementById("general");
-const RemoveElement = document.querySelector(".taskForm");
+const RemoveElement = document.getElementsByClassName("taskForm");
 
 //remove all tasks
 delform.addEventListener("click", () => {
@@ -36,8 +36,12 @@ delform.addEventListener("click", () => {
     
     taskdelBtn.addEventListener('click', () => {
       ListElement.removeChild(taskForm);
-  });
-  });
+    });
+    taskaddBtn.addEventListener('click', () => {
+        taskaddBtn.className = "complete";
+        taskPoint.className = "textcompleted";
+  })
+});
   
   
 

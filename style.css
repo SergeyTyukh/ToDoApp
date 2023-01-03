@@ -179,7 +179,26 @@ button {
     width: 24px;
     height: 24px;
     background: #1F4068;
+    display: flex;
+    align-items: center;
     border-radius: 4px;
     flex: none;
     flex-grow: 0;
+}
+
+.textcompleted {
+    width: 476px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    align-items: center;
+    color: #000000;
+    flex: none;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    color: #000000;
 }
